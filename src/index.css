@@ -1,3 +1,34 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.icon-size {
+    font-size: 20px;
+}
+
+.ant-card .ant-card-body{
+
+    padding: 0 !important;
+    display: flex;
+}
+
+
+
+@layer utilities {
+
+    /* Output */
+    .side-bg {
+        background-color: rgb(224 231 255) !important;
+    }
+
+    .header-bg {
+        background-color: rgb(165 180 252) !important;
+    }
+}

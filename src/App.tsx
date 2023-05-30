@@ -1,8 +1,14 @@
-import React from 'react'
+import HeaderLayout from "./components/Layout/Header/HeaderLayout"
+import { RouterProvider, createBrowserRouter, createRoutesFromElements , Route } from 'react-router-dom' 
 
 const App = () => {
+  const router = createBrowserRouter(createRoutesFromElements(
+    <Route path="/" element={<HeaderLayout />} />
+  ))
   return (
-    <div>App</div>
+    <>
+      <RouterProvider router={router}></RouterProvider>
+    </>
   )
 }
 
