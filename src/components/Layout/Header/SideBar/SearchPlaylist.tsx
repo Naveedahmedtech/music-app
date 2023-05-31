@@ -35,7 +35,7 @@ const searchResult = (query: string) =>
             };
         });
 
-const Search: React.FC = () => {
+const SearchPlaylist: React.FC = () => {
     const [options, setOptions] = useState<SelectProps<object>['options']>([]);
 
     const handleSearch = (value: string) => {
@@ -62,4 +62,4 @@ const Search: React.FC = () => {
     );
 };
 
-export default Search;
+export default SearchPlaylist;
