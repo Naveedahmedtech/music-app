@@ -52,7 +52,7 @@ const HeaderLayout = () => {
 
 
           </Sider>
-          <Layout style={{ padding: "0 24px 24px", marginLeft: 280, backgroundColor: 'white' }}>
+          <Layout style={{ padding: "0 24px 24px", marginLeft: 280, backgroundColor: '#1f2937' }}>
             <Content
               style={{
                 padding: 24,

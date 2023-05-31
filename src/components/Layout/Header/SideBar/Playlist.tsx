@@ -18,62 +18,10 @@ const Playlist: React.FC = () => {
                         <Avatar width={80} variant="circular" alt="candice" src="https://plus.unsplash.com/premium_photo-1674939148088-d71acc1541ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60" />
                     </ListItemPrefix>
                     <div style={{ marginLeft: '20px' }}>
-                        <Typography.Title level={5} style={{ margin: '0' }}>
+                        <Typography.Title level={5} style={{ margin: '0' }} className="light-color">
                             Song Name
                         </Typography.Title>
-                        <Typography.Text >
-                            Playlist Name
-                        </Typography.Text>
-                    </div>
-                </ListItem>
-                <ListItem className="mt-5">
-                    <ListItemPrefix>
-                        <Avatar width={80} variant="circular" alt="candice" src="https://plus.unsplash.com/premium_photo-1674939148088-d71acc1541ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60" />
-                    </ListItemPrefix>
-                    <div style={{ marginLeft: '20px' }}>
-                        <Typography.Title level={5} style={{ margin: '0' }}>
-                            Song Name
-                        </Typography.Title>
-                        <Typography.Text >
-                            Playlist Name
-                        </Typography.Text>
-                    </div>
-                </ListItem>
-                <ListItem className="mt-5">
-                    <ListItemPrefix>
-                        <Avatar width={80} variant="circular" alt="candice" src="https://plus.unsplash.com/premium_photo-1674939148088-d71acc1541ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60" />
-                    </ListItemPrefix>
-                    <div style={{ marginLeft: '20px' }}>
-                        <Typography.Title level={5} style={{ margin: '0' }}>
-                            Song Name
-                        </Typography.Title>
-                        <Typography.Text >
-                            Playlist Name
-                        </Typography.Text>
-                    </div>
-                </ListItem>
-                <ListItem className="mt-5">
-                    <ListItemPrefix>
-                        <Avatar width={80} variant="circular" alt="candice" src="https://plus.unsplash.com/premium_photo-1674939148088-d71acc1541ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60" />
-                    </ListItemPrefix>
-                    <div style={{ marginLeft: '20px' }}>
-                        <Typography.Title level={5} style={{ margin: '0' }}>
-                            Song Name
-                        </Typography.Title>
-                        <Typography.Text >
-                            Playlist Name
-                        </Typography.Text>
-                    </div>
-                </ListItem>
-                <ListItem className="mt-5">
-                    <ListItemPrefix>
-                        <Avatar width={80} variant="circular" alt="candice" src="https://plus.unsplash.com/premium_photo-1674939148088-d71acc1541ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60" />
-                    </ListItemPrefix>
-                    <div style={{ marginLeft: '20px' }}>
-                        <Typography.Title level={5} style={{ margin: '0' }}>
-                            Song Name
-                        </Typography.Title>
-                        <Typography.Text >
+                        <Typography.Text className="secondary-color">
                             Playlist Name
                         </Typography.Text>
                     </div>

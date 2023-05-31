@@ -7,7 +7,14 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    color: #f8fafc;
 }
+
+
+body{
+    background-color: #1f2937;
+}
+
 
 .icon-size {
     font-size: 20px;
@@ -19,16 +26,45 @@
     display: flex;
 }
 
+.light-color{
+    color: #f8fafc !important;
+}
+.secondary-color{
+    color: #d1d5db !important;
+}
+.dark-color {
+    color: #030712 !important;
+}
+
+::placeholder{
+color: #d1d5db !important;
+}
+
+
+:where(.css-dev-only-do-not-override-w8mnev).ant-input-affix-wrapper{
+    background-color: #1f2937 !important;
+    border-color: #6b7280 !important;
+}
+
+
+
+.custom-input input {
+    background-color: #1f2937;
+    outline: #1f2937;
+    border-color: #1f2937;
+    color: #f8fafc;
+}
+
 
 
 @layer utilities {
 
     /* Output */
     .side-bg {
-        background-color: rgb(224 231 255) !important;
+        background-color: #030712 !important;
     }
 
     .header-bg {
-        background-color: rgb(165 180 252) !important;
+        background-color: #111827 !important;
     }
 }

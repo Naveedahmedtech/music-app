@@ -13,29 +13,25 @@ const searchResult = (query: string) =>
             return {
                 value: category,
                 label: (
-                    <div
-                        style={{
-                            display: 'flex',
-                            justifyContent: 'space-between',
-                        }}
-                    >
-                        <span>
+                    <div>
+                        <span className='dark-color'>
                             Found {query} on{' '}
                             <a
                                 href={`https://s.taobao.com/search?q=${query}`}
                                 target="_blank"
                                 rel="noopener noreferrer"
+                                className='dark-color'
                             >
                                 {category}
                             </a>
                         </span>
-                        <span>{getRandomInt(200, 100)} results</span>
+                        <span className="dark-color">{getRandomInt(200, 100)} results</span>
                     </div>
                 ),
             };
         });
 
-const SearchPlaylist: React.FC = () => {
+const SearchPlaylist = () => {
     const [options, setOptions] = useState<SelectProps<object>['options']>([]);
 
     const handleSearch = (value: string) => {
@@ -48,17 +44,14 @@ const SearchPlaylist: React.FC = () => {
 
     return (
         <AutoComplete
-            popupMatchSelectWidth={252} // Replace dropdownMatchSelectWidth with popupMatchSelectWidth
             options={options}
             onSelect={onSelect}
             onSearch={handleSearch}
-            style={{ backgroundColor: 'black', borderRadius: '8px' }}
         >
-            <Input.Search size="medium" placeholder="input here" enterButton
-
+            <Input.Search size="medium" placeholder="Search..." enterButton
+                className="custom-input"
             />
         </AutoComplete>
-
     );
 };
 

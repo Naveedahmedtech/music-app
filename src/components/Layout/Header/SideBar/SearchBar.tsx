@@ -9,11 +9,11 @@ import SearchPlaylist from './SearchPlaylist';
 // drop down
 const items: MenuProps['items'] = [
     {
-        label: <p>Recently Added</p>,
+        label: <p className='dark-color'>Recently Added</p>,
         key: '0',
     },
     {
-        label: <p>New</p>,
+        label: <p className='dark-color'>New</p>,
         key: '1',
     }
 ];
