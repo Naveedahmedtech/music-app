@@ -21,7 +21,7 @@ const NavBar = () => {
                       allowClear
                       enterButton="Search"
                       size="large"
-                      className="custom-input" // Add a custom CSS class for the search input
+                      className="custom-input"
                       onSearch={onSearch}
                   />
               </div>
