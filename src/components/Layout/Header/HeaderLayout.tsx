@@ -1,6 +1,7 @@
-import { Breadcrumb, Layout, theme } from "antd";
+import { Layout, theme } from "antd";
 import SideBar from './SideBar/SideBar';
 import NavBar from "../../NavBar";
+import { Outlet } from "react-router-dom";
 
 
 const { Header, Content, Sider } = Layout;
@@ -21,7 +22,7 @@ const HeaderLayout = () => {
     <>
       <Layout style={{ backgroundColor: 'none' }}>
         <Header
-          className="header-bg"
+          className="header-bg margin-zero width-100"
           style={{
             position: 'sticky',
             top: 0,
@@ -44,23 +45,19 @@ const HeaderLayout = () => {
               left: 0,
               top: 0,
               bottom: 0,
-              padding: '10px'
+              padding: '10px',
             }}
-            className="side-bg"
+            className="side-bg side-none"
           >
             <SideBar />
-
-
           </Sider>
-          <Layout style={{ padding: "0 24px 24px", marginLeft: 280, backgroundColor: '#1f2937' }}>
+          <Layout className="margin-zero" style={{ marginLeft: 280, backgroundColor: '#1f2937' }}>
             <Content
               style={{
-                padding: 24,
-                margin: 0,
-                // background: colorBgContainer,
+                padding: '20px'
               }}
             >
-              content
+              <Outlet />
             </Content>
           </Layout>
         </Layout>

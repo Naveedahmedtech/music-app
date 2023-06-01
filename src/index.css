@@ -68,3 +68,17 @@ color: #d1d5db !important;
         background-color: #111827 !important;
     }
 }
+
+
+
+@media screen and (max-width: 1200px) {
+    .side-none{
+        display: none;
+    }
+    .margin-zero{
+        margin: 0 !important;
+    }
+    .width-100{
+        width: 100% !important;
+    }
+}
