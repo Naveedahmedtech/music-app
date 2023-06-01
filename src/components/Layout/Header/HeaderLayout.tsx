@@ -3,21 +3,12 @@ import SideBar from './SideBar/SideBar';
 import NavBar from "../../NavBar";
 import { Outlet } from "react-router-dom";
 
-
 const { Header, Content, Sider } = Layout;
-
-
-
-
-
 
 const HeaderLayout = () => {
   const {
     token: { colorBgContainer },
   } = theme.useToken();
-
-
-
   return (
     <>
       <Layout style={{ backgroundColor: 'none' }}>
